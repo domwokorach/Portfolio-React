@@ -244,8 +244,8 @@ class TimelineComponent extends Component {
                 </a>
               </p>
               <div className="double-img">
-              <Avatar src="lyd_2016.jpg" size={150} />
-              <Avatar src="lyd-1_2016.png" size={150} />
+                <Avatar src="lyd_2016.jpg" size={150} />
+                <Avatar src="lyd-1_2016.png" size={150} />
               </div>
 
               <div className="timeline-entries">
@@ -365,7 +365,7 @@ class TimelineComponent extends Component {
                 in London.
               </p>
               <p>
-                "We are delighted to announce the launch of ChnageWorks.
+                "We are delighted to announce the launch of ChangeWorks.
                 Delivered by Leonard Cheshire Disability, this programmes will
                 support disabled adults who are for paid employment."
               </p>
