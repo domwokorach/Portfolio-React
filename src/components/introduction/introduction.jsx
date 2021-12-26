@@ -6,7 +6,7 @@ class IntroductionComponent extends Component {
   render() {
     return (
       <div className="introduction">
-        <Avatar src="Avatar.jpg" size={150} />
+        <Avatar src="avatar.jpg" size={150} />
         <p className="introduction-text">
           Loves React, Javascript, Node and Express. Front End Development,
           currently living in London, United Kingdom.
