@@ -16,19 +16,15 @@ class FooterComponent extends Component {
     return (
       <div className="footer">
         <div className="link-list">
-          <a target="_blank" href="https://github.com/salomonelli">
+          <a target="_blank" href="https://github.com/domwokorach">
             Github
           </a>
            /
-          <a target="_blank" href="https://twitter.com/salomonelli">
+          <a target="_blank" href="https://twitter.com/do3inic">
             Twitter
           </a>
            /
-          <a target="_blank" href="https://www.xing.com/profile/Sara_Steiert">
-            Xing
-          </a>
-           /
-          <a target="_blank" href="https://www.linkedin.com/in/sara-steiert-b0a631134/">
+          <a target="_blank" href="https://www.linkedin.com/in/dominic-w-3673523b/">
             LinkedIn
           </a>
         </div>

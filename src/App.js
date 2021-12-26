@@ -1,22 +1,23 @@
-import React, {Component} from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import 'roboto-npm-webfont';
-import './App.css';
+import React, { Component } from "react";
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import "roboto-npm-webfont";
+import "./App.css";
 
-import ProgressComponent from './components/progress/progress';
-import BrowserDetectComponent from './components/browser-detect/browser-detect';
-import HeaderComponent from './components/header/header';
-import DarkVoiceComponent from './components/dark-voice/dark-voice';
-import IntroductionComponent from './components/introduction/introduction';
-import TimelineComponent from './components/timeline/timeline';
-import ProgrammingComponent from './components/programming/programming';
-import AgileQuoteComponent from './components/agile-quote/agile-quote';
-import AgileComponent from './components/agile/agile';
-import DesignComponent from './components/design/design';
-import CodeGithubComponent from './components/code-github/code-github';
-import ContactComponent from './components/contact/contact';
-import FooterComponent from './components/footer/footer';
-
+import ProgressComponent from "./components/progress/progress";
+import BrowserDetectComponent from "./components/browser-detect/browser-detect";
+import HeaderComponent from "./components/header/header";
+import DarkVoiceComponent from "./components/dark-voice/dark-voice";
+import IntroductionComponent from "./components/introduction/introduction";
+import TimelineComponent from "./components/timeline/timeline";
+import ProgrammingComponent from "./components/programming/programming";
+import AgileQuoteComponent from "./components/agile-quote/agile-quote";
+import AgileComponent from "./components/agile/agile";
+import DesignComponent from "./components/design/design";
+import CodeGithubComponent from "./components/code-github/code-github";
+import ContactComponent from "./components/contact/contact";
+import FooterComponent from "./components/footer/footer";
+import GreetingComponent from "./components/components/greeting";
+import TimerComponent from "./components/components/timer/timer";
 class App extends Component {
   render() {
     return (
@@ -31,6 +32,8 @@ class App extends Component {
           </div>
           <div className="section colored">
             <div className="section-container">
+              <TimerComponent></TimerComponent>
+              <GreetingComponent />
               <IntroductionComponent></IntroductionComponent>
             </div>
           </div>

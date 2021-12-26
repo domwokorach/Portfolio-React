@@ -1,0 +1,22 @@
+.video-clip {
+  color: rgba(255, 255, 255, 0.51);
+  font-family: Roboto;
+  font-weight: 300;
+  text-align: center;
+}
+
+.video-clip-tag {
+  font-size: 18pt;
+  font-weight: 500;
+}
+
+.microphone-action {
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.video-clip-text-tag {
+  margin-bottom: 0;
+  margin-top: 0;
+}

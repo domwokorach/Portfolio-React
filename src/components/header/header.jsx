@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ArrowIcon from 'material-ui/svg-icons/hardware/keyboard-arrow-down';
+
 const scrollTo = require('scroll-to');
 import './header.css';
+import { Avatar } from 'material-ui';
 
 class HeaderComponent extends Component {
     constructor(props) {
@@ -40,8 +42,9 @@ class HeaderComponent extends Component {
         return (
           <div className="header-wrapper" style={{"height": this.state.height}}>
             <div className="header">
-                <h3>Sara Steiert</h3>
-                <h6>Junior Technology Consultant</h6>
+              <Avatar src="lion.png" size={175} />
+                <h3>Do3inic Wokorach-O</h3>
+                <h6>Front End Development</h6>
             </div>
             <div className="scroll-down-btn">
               <FloatingActionButton mini={true} backgroundColor="#A80202" onClick={this.onScrollToIntro.bind(this)}>

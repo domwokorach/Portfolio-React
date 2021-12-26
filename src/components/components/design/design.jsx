@@ -12,12 +12,9 @@ class DesignComponent extends Component {
           <div className="design">
             <p className="headline">User Experience and Design</p>
             <p className="text-justify">
-              Through my parents business @fotolia, at the age of 13, I fell in love with Photoshop.
-
-              Ever since, I tried to make everything fancy.
-
-              Nowadays, with a user-centered mindset, I try to develop intuitive, mobile and content first applications.
-
+            Through learn my self follow from YouTube, Web Developer tutours, at the age of 22, I fell in love with Web Developer of code programess, Adobe Dreamweaver, Photoshop and more etc.
+            Ever since, I tried to make everything fancy.
+            Nowadays, with a user-centered mindset, I try to develop intuitive, mobile and content first applications.
             </p>
 
               <div className="design-checkbox">
@@ -25,7 +22,7 @@ class DesignComponent extends Component {
                   checkedIcon={<ActionFavorite />}
                   uncheckedIcon={<ActionFavoriteBorder />}
                   iconStyle={{"fill":"#A80202"}}
-                  label="UX-Consulting"
+                  label="UI/UX Designer"
                 />
               </div>
               <div className="design-checkbox">
@@ -44,20 +41,12 @@ class DesignComponent extends Component {
                 label="Adobe Illustrator"
               />
             </div>
-            <div className="design-checkbox">
-              <Checkbox
-                checkedIcon={<ActionFavorite />}
-                uncheckedIcon={<ActionFavoriteBorder />}
-                iconStyle={{"fill":"#A80202"}}
-                label="Blender"
-              />
-          </div>
           <div className="design-checkbox">
             <Checkbox
               checkedIcon={<ActionFavorite />}
               uncheckedIcon={<ActionFavoriteBorder />}
               iconStyle={{"fill":"#A80202"}}
-              label="Digital Painting"
+              label="Sketch"
             />
         </div>
 

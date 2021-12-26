@@ -11,13 +11,30 @@
 }
 
 .timeline-entry-chip {
-  float: left;
   margin-right: 5px;
   margin-bottom: 5px;
   display: inline-block;
 }
 
+.timeline-entries img {
+  margin-left: 100px;
+}
+
+.double-img img {
+  margin-left: 25px;
+}
+
 .timeline-entries {
   display: inline-block;
   margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+}
+
+.images-blog {
+  text-align: center;
 }

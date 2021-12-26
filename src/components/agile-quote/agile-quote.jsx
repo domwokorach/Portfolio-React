@@ -16,7 +16,7 @@ class AgileQuoteComponent extends Component {
                 a sword-day, a red day, ere the sun rises!
                 Ride now, ride now! Ride to Gondor!
               </span>
-              <span className="quote-author">- Théoden, son of Thengel</span>
+              <span className="quote-author">- Dominic</span>
             </p>
           </div>
         );

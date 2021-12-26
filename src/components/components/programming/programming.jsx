@@ -34,45 +34,45 @@ class ProgrammingComponent extends Component {
                                     <li>&lt;<span className="html-1">body</span>&gt;</li>
                                     <li>
                                       <ul className="no-top-padding">
-                                        <li>&lt;<span className="html-1">ul</span>&gt;</li>
+                                        <li>&lt;<span className="html-1">Bootstrap, Material-UI</span>&gt;</li>
                                         <ul className="no-top-padding">
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">JavaScript</span>
+                                            <span className="html-2">NPM, Git, Github</span>
                                             &lt;/<span className="html-1">li</span>&gt;</li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Node.js</span>
+                                            <span className="html-2">Bootstrap, Material-UI</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">React</span>
+                                            <span className="html-2">Node, Express</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Angular 2</span>
+                                            <span className="html-2">NextJS</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Mocha</span>
+                                            <span className="html-2">Client Interfaces</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Webpack, Babel</span>
+                                            <span className="html-2">React, React Native</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Docker</span>
+                                            <span className="html-2">DOM</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Linux</span>
+                                            <span className="html-2">JavaScript, JQuery, TypeScript</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>

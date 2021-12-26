@@ -1,6 +1,5 @@
 {
-  "name": "personal-portfolio",
-  "homepage": "https://salomonelli.github.io/personal-portfolio",
+  "name": "dw-portfolio-react",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -22,7 +21,17 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "deploy": "npm run build && gh-pages -d build"
-  }
+    "build": "react-scripts build"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domwokorach/Portfolio-React.git"
+  },
+  "author": "Dominic Wokorach-O",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/domwokorach/Portfolio-React/issues"
+  },
+  "description": ""
 }

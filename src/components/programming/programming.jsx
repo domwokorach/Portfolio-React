@@ -38,51 +38,66 @@ class ProgrammingComponent extends Component {
                                         <ul className="no-top-padding">
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">JavaScript</span>
+                                            <span className="html-2">HTML</span>
                                             &lt;/<span className="html-1">li</span>&gt;</li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Node.js</span>
+                                            <span className="html-2">CSS3, Less, Sass</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">React</span>
+                                            <span className="html-2">JavaScript, JQuery, TypeScript</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Angular 2</span>
+                                            <span className="html-2">DOM</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Mocha</span>
+                                            <span className="html-2">React, React Native</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Webpack, Babel</span>
+                                            <span className="html-2">Client Interfaces</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Docker</span>
+                                            <span className="html-2">Next.js</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Linux</span>
+                                            <span className="html-2">Node, Express</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">LESS, SASS</span>
+                                            <span className="html-2">Bootstrap, Material-UI</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">HTML5, CSS3</span>
+                                            <span className="html-2">NPM, Git, GitHub</span>
+                                            &lt;/<span className="html-1">li</span>&gt;
+                                          </li>
+                                          <li>
+                                            &lt;<span className="html-1">li</span>&gt;
+                                            <span className="html-2">Sketch, Photoshop, Illsustrator</span>
+                                            &lt;/<span className="html-1">li</span>&gt;
+                                          </li>
+                                          <li>
+                                            &lt;<span className="html-1">li</span>&gt;
+                                            <span className="html-2">UI/UX Design</span>
+                                            &lt;/<span className="html-1">li</span>&gt;
+                                          </li>
+                                          <li>
+                                            &lt;<span className="html-1">li</span>&gt;
+                                            <span className="html-2">MAC, Windows</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                         </ul>
