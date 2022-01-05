@@ -1,5 +1,6 @@
 {
   "name": "dw-portfolio-react",
+  "homepage": "https://domwokorach.github.io/Portfolio-React",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -20,6 +21,8 @@
     "react-scripts": "0.9.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
