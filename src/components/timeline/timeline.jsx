@@ -98,34 +98,51 @@ class TimelineComponent extends Component {
             </CardText>
           </Card>
         </div>
-        <p className="headline">Learning codes</p>
+        <p className="headline">Working experience</p>
         <div className="timeline-entry">
           <Card
             expanded={this.state.expanded}
             onExpandChange={this.handleExpandChange}
           >
             <CardHeader
-              title=""
-              subtitle="Contiune..."
+              title="Web Development Bootcamp (Course)"
+              subtitle="Home | 2020 - 2021"
               actAsExpander={true}
               showExpandableButton={true}
             />
             <CardText expandable={true}>
               <div className="timeline-entries">
                 <div className="timeline-entry-chip">
-                  <Chip>AWS</Chip>
+                  <Chip>Bootstrap 4</Chip>
                 </div>
                 <div className="timeline-entry-chip">
-                  <Chip>MongoDB</Chip>
+                  <Chip>React</Chip>
                 </div>
                 <div className="timeline-entry-chip">
-                  <Chip>MongooseJS</Chip>
+                  <Chip>React Native</Chip>
+                </div>
+                <div className="timeline-entry-chip">
+                  <Chip>Nodes</Chip>
+                </div>
+                <div className="timeline-entry-chip">
+                  <Chip>Express</Chip>
+                </div>
+                <div className="timeline-entry-chip">
+                  <Chip>JavaScript</Chip>
+                </div>
+                <div className="timeline-entry-chip">
+                  <Chip>NoSQL & MongoDB</Chip>
+                </div>
+                <div className="timeline-entry-chip">
+                  <Chip>Material-UI</Chip>
+                </div>
+                <div className="timeline-entry-chip">
+                  <Chip>Sass</Chip>
                 </div>
               </div>
             </CardText>
           </Card>
         </div>
-        <p className="headline">Working experience</p>
         <div className="timeline-entry">
           <Card
             expanded={this.state.expanded1}
