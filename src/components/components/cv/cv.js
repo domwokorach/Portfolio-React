@@ -2,28 +2,27 @@ import React, { Component } from "react";
 import { Card, CardHeader, CardActions, CardText } from "material-ui/Card";
 import FlatButton from "material-ui/FlatButton";
 
-import "./code-github.css";
+import "./cv.css";
 
 class CodeGithubComponent extends Component {
   render() {
     return (
       <div className="code-github">
-        <p className="headline">Look at my code, my code is amazing</p>
+        <p className="headline">Please Find me, my CV.</p>
         <Card>
           <CardHeader
-            subtitle="Github Repository"
-            title="domwokorach/Portfolio-React"
+            className="cardheader"
+            title="PDF Download - CV"
             avatar="github.png"
           />
-          <CardText>
-            This application is made with React and Material UI. Check out the
-            code on Github.
+          <CardText className="test">
+            Please find attached my CV from below.
           </CardText>
           <CardActions>
             <FlatButton
-              className="button"
-              label="View on github"
-              href="https://github.com/domwokorach"
+              className="flatbutton"
+              label="View on  download"
+              href="./dominic.pdf"
               target="_blank"
             />
           </CardActions>

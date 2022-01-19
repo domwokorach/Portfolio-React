@@ -14,6 +14,7 @@ import AgileQuoteComponent from "./components/agile-quote/agile-quote";
 import AgileComponent from "./components/agile/agile";
 import DesignComponent from "./components/design/design";
 import CodeGithubComponent from "./components/code-github/code-github";
+import CVComponent from "./components/components/cv/cv";
 import ContactComponent from "./components/contact/contact";
 import FooterComponent from "./components/footer/footer";
 import GreetingComponent from "./components/components/greeting";
@@ -71,6 +72,11 @@ class App extends Component {
           <div className="section colored">
             <div className="section-container">
               <CodeGithubComponent></CodeGithubComponent>
+            </div>
+          </div>
+          <div className="section dark">
+            <div className="section-container">
+              <CVComponent></CVComponent>
             </div>
           </div>
           <div className="section">
