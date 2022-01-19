@@ -13,7 +13,7 @@ class CodeGithubComponent extends Component {
           <CardHeader
             className="cardheader"
             title="PDF Download - CV"
-            avatar="github.png"
+            avatar="cv.png"
           />
           <CardText className="test">
             Please find attached my CV from below.
