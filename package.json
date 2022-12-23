@@ -36,5 +36,10 @@
   "bugs": {
     "url": "https://github.com/domwokorach/Portfolio-React/issues"
   },
-  "description": ""
+  "description": "",
+  "browserslist": [
+    ">0.2%",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

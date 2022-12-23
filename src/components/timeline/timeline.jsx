@@ -72,8 +72,38 @@ class TimelineComponent extends Component {
     return (
       <div className="timeline">
         <p className="headline">
-          <a href="">Open to Work!</a>
+          <a href="">My Projects</a>
         </p>
+        <div className="timeline-entry">
+          <Card
+            expanded={this.state.expanded}
+            onExpandChange={this.handleExpandChange}
+          >
+            <CardHeader
+              title="Github"
+              subtitle="My Projects - 2023"
+              actAsExpander={true}
+              showExpandableButton={true}
+            />
+            <CardText expandable={true}>
+              <div className="timeline-entries">
+                <Avatar src="projects-large.png" size={150} />
+                <div className="timeline-entry-chip">
+                  <Chip>JavaScript | TypeScript | React | API</Chip>
+                </div>
+                <div className="timeline-entry-chip">
+                  <Chip>Stripe | Google Cloud | Firebase | TailwindCSS</Chip>
+                </div>
+                <p>
+                  <br />
+                  <a href="https://videos-hooks-amber-theta.vercel.app/">
+                    Click - API Data - Search on YouTube
+                  </a>
+                </p>
+              </div>
+            </CardText>
+          </Card>
+        </div>
         <div className="timeline-entry">
           <Card
             expanded={this.state.expanded}
@@ -98,6 +128,7 @@ class TimelineComponent extends Component {
             </CardText>
           </Card>
         </div>
+
         <p className="headline">Working experience</p>
         <div className="timeline-entry">
           <Card

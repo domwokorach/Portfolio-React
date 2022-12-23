@@ -39,7 +39,7 @@ class ProgrammingComponent extends Component {
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
                                             <span className="html-2">HTML</span>
-                                            &lt;/<span className="html-1">li</span>&gt;</li>
+                                            &lt;/<span className="html-1">li</span>&gt;</li>                                                                              
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
                                             <span className="html-2">CSS3, Less, Sass</span>
@@ -77,12 +77,21 @@ class ProgrammingComponent extends Component {
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Bootstrap, Material-UI</span>
+                                            <span className="html-2">NPM, Git, GitHub</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">NPM, Git, GitHub</span>
+                                            <span className="html-2">API, JSON Viewer, DevTools</span>
+                                            &lt;/<span className="html-1">li</span>&gt;
+                                            </li>
+                                            <li>
+                                            &lt;<span className="html-1">li</span>&gt;
+                                            <span className="html-2">Firebase, Google Cloud, Stripe</span>
+                                            &lt;/<span className="html-1">li</span>&gt;</li>
+                                          <li>
+                                            &lt;<span className="html-1">li</span>&gt;
+                                            <span className="html-2">Bootstrap, Material-UI, Tailwindcss</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
