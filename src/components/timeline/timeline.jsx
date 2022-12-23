@@ -96,8 +96,12 @@ class TimelineComponent extends Component {
                 </div>
                 <p>
                   <br />
-                  <a href="https://videos-hooks-amber-theta.vercel.app/">
-                    Click - API Data - Search on YouTube
+                  Click - My project API Data.
+                  <a
+                    href="https://videos-hooks-amber-theta.vercel.app/"
+                    alt="Click - My API Data"
+                  >
+                    
                   </a>
                 </p>
               </div>
