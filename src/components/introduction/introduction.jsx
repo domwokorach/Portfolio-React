@@ -8,8 +8,9 @@ class IntroductionComponent extends Component {
       <div className="introduction">
         <Avatar src="avatar.jpg" size={150} />
         <p className="introduction-text">
-          Loves React, Javascript, Node and Express. Front End Development,
-          currently living in London, United Kingdom.
+          Loves Typescript, React, Javascript, Node and Express. Front End
+          Development/Software Engineer, currently living in London, United
+          Kingdom.
         </p>
       </div>
     );
