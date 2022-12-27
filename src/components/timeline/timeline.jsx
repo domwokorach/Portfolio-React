@@ -102,6 +102,7 @@ class TimelineComponent extends Component {
                   >
                     Click - My project API Data.
                   </a>
+                  <br></br>
                   <a
                     href="https://dom-steamovie.vercel.app/"
                     alt="Click - My API Data"
