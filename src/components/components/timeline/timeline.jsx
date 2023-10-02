@@ -79,7 +79,7 @@ class TimelineComponent extends Component {
           >
             <CardHeader
               title="Looking a new job"
-              subtitle="Searching open to new opportunities in 2022!"
+              subtitle="Searching open to new opportunities in 2023!"
               actAsExpander={true}
               showExpandableButton={true}
             />
