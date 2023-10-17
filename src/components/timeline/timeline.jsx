@@ -81,7 +81,7 @@ class TimelineComponent extends Component {
           >
             <CardHeader
               title="Github"
-              subtitle="My Projects - 2023"
+              subtitle="My Projects"
               actAsExpander={true}
               showExpandableButton={true}
             />
@@ -129,10 +129,10 @@ class TimelineComponent extends Component {
               <div className="timeline-entries">
                 <Avatar src="dom-large.jpg" size={150} />
                 <div className="timeline-entry-chip">
-                  <Chip>Front End Developer | React | Nodes | Express</Chip>
+                  <Chip>React | Typescript | React Native | Javascript </Chip>
                 </div>
                 <div className="timeline-entry-chip">
-                  <Chip>Full Stack Developer</Chip>
+                  <Chip>Software Engineer</Chip>
                 </div>
               </div>
             </CardText>
