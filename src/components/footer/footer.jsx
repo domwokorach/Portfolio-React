@@ -21,7 +21,7 @@ class FooterComponent extends Component {
           </a>
            /
           <a target="_blank" href="https://twitter.com/do3inic">
-            Twitter
+            X
           </a>
            /
           <a target="_blank" href="https://www.linkedin.com/in/dominic-w-3673523b/">
