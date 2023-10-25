@@ -79,17 +79,17 @@ class TimelineComponent extends Component {
           >
             <CardHeader
               title="Looking a new job"
-              subtitle="Searching open to new opportunities in 2023!"
+              subtitle="Searching open to new opportunities in 2024!"
               actAsExpander={true}
               showExpandableButton={true}
             />
             <CardText expandable={true}>
               <div className="timeline-entries">
                 <div className="timeline-entry-chip">
-                  <Chip>Front End Developer | React | Nodes | Express</Chip>
+                  <Chip>React | Typescript | React Native | Javascript</Chip>
                 </div>
                 <div className="timeline-entry-chip">
-                  <Chip>Full Stack Developer</Chip>
+                  <Chip>Software Engineer</Chip>
                 </div>
               </div>
             </CardText>

@@ -80,8 +80,8 @@ class TimelineComponent extends Component {
             onExpandChange={this.handleExpandChange}
           >
             <CardHeader
-              title="Github"
-              subtitle="My Projects"
+              title="My Projects"
+              // subtitle="My Projects"
               actAsExpander={true}
               showExpandableButton={true}
             />
@@ -89,10 +89,10 @@ class TimelineComponent extends Component {
               <div className="timeline-entries">
                 <Avatar src="projects-large.png" size={150} />
                 <div className="timeline-entry-chip">
-                  <Chip>JavaScript | TypeScript | React | API</Chip>
+                  <Chip>JavaScript | TypeScript | React | API </Chip>
                 </div>
                 <div className="timeline-entry-chip">
-                  <Chip>Stripe | Google Cloud | Firebase | TailwindCSS</Chip>
+                  <Chip> Google Cloud | Firebase | Github</Chip>
                 </div>
                 <p>
                   <br />
@@ -100,14 +100,28 @@ class TimelineComponent extends Component {
                     href="https://videos-hooks-amber-theta.vercel.app/"
                     alt="Click - My API Data"
                   >
-                    Click - My project API Data.
+                    Click - Steaming API.
                   </a>
-                  <br></br>
+                  <br />
                   <a
-                    href="https://dom-steamovie.vercel.app/"
+                    href="https://my-project-opening-account.vercel.app/"
                     alt="Click - My API Data"
                   >
-                    Click - My project Steamovie.
+                    Click - Opening Account.
+                  </a>
+                  <br />
+                  <a
+                    href="https://dw-travel-world.vercel.app/#"
+                    alt="Click - My API Data"
+                  >
+                    Click - Travel World Web Developer.
+                  </a>
+                  <br />
+                  <a
+                    href="https://dw-weather-api.vercel.app/"
+                    alt="Click - My API Data"
+                  >
+                    Click - Weather API.
                   </a>
                 </p>
               </div>
@@ -121,7 +135,7 @@ class TimelineComponent extends Component {
           >
             <CardHeader
               title="Looking a new job"
-              subtitle="Searching open to new opportunities in 2023!"
+              subtitle="Searching open to new opportunities in 2024!"
               actAsExpander={true}
               showExpandableButton={true}
             />
