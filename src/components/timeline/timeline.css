@@ -38,3 +38,15 @@ a {
 .images-blog {
   text-align: center;
 }
+
+.feature-list{
+  color: rgba(0, 0, 0, 0.54);
+}
+
+hr {
+  color: rgb(255, 0, 0);
+}
+
+.feature-text{
+  font-family: Roboto, sans-serif;
+}

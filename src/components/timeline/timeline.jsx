@@ -72,6 +72,53 @@ class TimelineComponent extends Component {
     return (
       <div className="timeline">
         <p className="headline">
+          <a href="">Shadowing Sessions</a>
+        </p>
+        <div className="timeline-entry">
+          <Card
+            expanded={this.state.expanded}
+            onExpandChange={this.handleExpandChange}
+          >
+            <CardHeader
+              title="Software Engineer"
+              subtitle="Sky | Shadowing Session - 2024"
+              actAsExpander={true}
+              showExpandableButton={true}
+            />
+            <CardText expandable={true}>
+              <div className="timeline-entries">
+                <Avatar src="sky_group_logo.png" size={150} />
+                <div className="timeline-entry-chip">
+                  <Chip>Python (Basic) | Javascript | API | Unit Test | Git/Gitub</Chip>
+                  <Chip>Bulk Tools | Backend & Microservice | Jenkins & Docker</Chip>
+                </div>
+
+              <strong>Shadowing Sessions.</strong>
+              <dl className="feature-lists">
+                <dt>Roles & Responsibilites:</dt>
+                <dd className="feature-text"><p>Backend | Evaluate | Get Available Catalogue (GAC).</p></dd>
+
+                <dt>CATS (Catalogue Services):</dt>
+                <dd className="feature-text"><p>Analysis | Design | Development | Testing | Deployment | Deployment & Maintenance & Design.</p></dd>
+             
+                <dt>Development Tools:</dt>
+                <dd className="feature-text"><p>Jira - For tracking task progress | Git/Github | IntelliJ/Pycharm | Jenkins - Build pipline.</p></dd>
+
+                <dt>Day to Day Tasks:</dt>
+                <dd className="feature-text"><p>Unit Testing & Features Testing | Bug is reported | Code Reviews | Scrum rituals.</p></dd>
+
+                <dt>Scrum Rituals:</dt>
+                <dd className="feature-text"><p>Stand up | Sprint Demos | Retrospective (Retros) | Refinement.</p></dd>
+
+                <dt>Developing Code:</dt>
+                <dd className="feature-text"><p>CATS | Understand what the code is doing, identify the problem | Testing (Unit Tests) | Feature Test (Does the API work?).</p></dd>
+              </dl>
+              </div>
+            </CardText>
+          </Card>
+        </div>
+
+        <p className="headline">
           <a href="">My Projects</a>
         </p>
         <div className="timeline-entry">
@@ -383,6 +430,7 @@ class TimelineComponent extends Component {
             </CardText>
           </Card>
         </div>
+        
         <div className="timeline-entry">
           <Card
             expanded={this.state.expanded4}
