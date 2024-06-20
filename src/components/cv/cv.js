@@ -17,7 +17,7 @@ class CodeGithubComponent extends Component {
           />
           <CardText>Please find attached my CV.</CardText>
           <CardActions>
-            <FlatButton label="View on CV" href="/" target="_blank" />
+            <FlatButton label="View on CV" href="" target="_blank" />
           </CardActions>
         </Card>
       </div>

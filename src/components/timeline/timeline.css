@@ -18,6 +18,7 @@
 
 .timeline-entries img {
   margin-left: 100px;
+  object-fit: cover;
 }
 
 .double-img img {
