@@ -9,3 +9,4 @@
 
 1. Run `npm run deploy`. This will start the build process and push afterwards to the gh-pages branch.
 2. Set under Settings > GitHub Pages the source to `gh-pages branch` and click `Save`.
+# Portfolio-React
