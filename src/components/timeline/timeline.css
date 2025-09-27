@@ -1,0 +1,91 @@
+.timeline p.headline {
+  margin: 10px;
+  text-align: center;
+  color: green;
+}
+
+.timeline-entry {
+  margin-bottom: 10px;
+}
+
+.timeline-entry:last-of-type {
+  margin-bottom: 0px;
+}
+
+.timeline-entry-chip {
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.timeline-entries {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Chip Modal Styles */
+.chip-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.chip-modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  min-width: 280px;
+  max-width: 90vw;
+  position: relative;
+  opacity: 5;
+  transform: translateY(-40px) scale(0.95);
+  transition: opacity 0.3s cubic-bezier(.4,0,.2,1), transform 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+.animate-chip-modal {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+.chip-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  font-size: 2rem;
+  color: #A80202;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.double-img {
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* Adds space between images */
+  align-items: center; /* Vertically centers images */
+}
+
+.timeline-entry-chip-blogs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+}
+
+.timeline-entry-chip-blogs ul {
+  list-style-type: none; /* Removes default bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+.timeline-entry-chip-blogs ul li{
+  color: grey;
+}
+

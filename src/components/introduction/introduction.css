@@ -1,0 +1,12 @@
+.introduction {
+  text-align: center;
+  display: inline-block;
+}
+
+.introduction-text {
+  margin-bottom: 0;
+}
+
+.weather-info{
+  color:rgb(255, 255, 255);
+}

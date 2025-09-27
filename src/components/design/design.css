@@ -1,0 +1,45 @@
+.design-checkbox {
+  margin-bottom: 20px;
+}
+
+.design-checkbox:last-of-type {
+  margin-bottom: 0;
+}
+
+.design .title {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.skills-list {
+  margin-top: 32px;
+  max-width: 400px;
+}
+.skill-bar {
+  margin-bottom: 16px;
+}
+.skill-label {
+  display: inline-block;
+  width: 100px;
+  font-weight: 500;
+}
+.progress-bg {
+  display: inline-block;
+  width: 180px;
+  height: 12px;
+  background: #eee;
+  border-radius: 6px;
+  margin: 0 10px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: #A80202;
+  border-radius: 6px 0 0 6px;
+  transition: width 0.6s cubic-bezier(.4,0,.2,1);
+}
+.skill-percent {
+  font-size: 0.95em;
+  color: #333;
+}

@@ -1,0 +1,31 @@
+.cv {
+  display: inline-block;
+  width: 100%;
+  background-color: #16151C;
+}
+
+p.headline {
+  margin: 10px;
+  text-align: center;
+  color: green;
+}
+
+.teaser-img {
+  float: left;
+  height: 100%;
+}
+
+.cv-background-img {
+  background: rgba(22, 21, 28, 0.84);
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.button {
+	text-align: center;
+  }
+
+p {
+  text-align: center;
+}
