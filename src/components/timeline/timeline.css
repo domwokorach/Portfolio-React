@@ -72,11 +72,13 @@
   align-items: center; /* Vertically centers images */
 }
 
+
 .timeline-entry-chip-blogs {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   color: grey;
+  margin-left: 100px;
 }
 
 .timeline-entry-chip-blogs ul {
@@ -85,7 +87,19 @@
   margin: 0; /* Removes default margin */
 }
 
-.timeline-entry-chip-blogs ul li{
+.timeline-entry-chip-blogs ul li {
   color: grey;
+  text-align: center;
+  text-decoration: none;
 }
 
+.timeline-entry-chip-blogs li a {
+  text-decoration: none;
+  color: green;
+}
+
+.timeline-entry-chip-blogs li a:hover,
+.timeline-entry-chip-blogs li a:focus {
+  color: #005f00;
+  text-decoration: underline;
+}
