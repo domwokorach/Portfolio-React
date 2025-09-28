@@ -1,7 +1,6 @@
-import React, {Component, useEffect, useState} from 'react';
+import React, {Component} from 'react';
 import './footer.css';
 import FlatButton from 'material-ui/FlatButton';
-import Cookies from 'js-cookie';
 const scrollTo = require('scroll-to');
 
 class FooterComponent extends Component {
@@ -36,30 +35,4 @@ class FooterComponent extends Component {
     );
   }
 }
-
-const CookiePopup = () => {
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    if (!Cookies.get('cookieConsent')) {
-      setShow(true);
-    }
-  }, []);
-
-  const acceptCookies = () => {
-    Cookies.set('cookieConsent', 'true', { expires: 365 });
-    setShow(false);
-  };
-
-  if (!show) return null;
-
-  return (
-    <div className="cookie-popup">
-      <p>This website uses cookies to enhance your experience.</p>
-      <button onClick={acceptCookies}>Accept</button>
-    </div>
-  );
-};
-
 export default FooterComponent;
-export { CookiePopup };
