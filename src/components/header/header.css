@@ -1,3 +1,15 @@
+.section.header-section {
+  background: rgb(22, 21, 28);
+  animation: headerColorCycle 12s linear infinite;
+}
+
+@keyframes headerColorCycle {
+  0% { background: rgb(22, 21, 28); }
+  33% { background: rgba(4, 4, 92, 0.265); }
+  66% { background: purple; }
+  100% { background: rgb(255, 108, 108); }
+}
+
 .header {
   text-align: center;
   position: absolute;
@@ -29,3 +41,4 @@
   text-transform: uppercase;
   letter-spacing: 9px;
 }
+

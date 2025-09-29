@@ -23,7 +23,9 @@ class TimelineComponent extends Component {
           expanded9: false,
           expanded10: false,
           showModal: false,
-          selectedChip: null
+          selectedChip: null,
+          showProjectModal: false,
+          selectedProject: null
         };
     }
 
@@ -33,6 +35,14 @@ class TimelineComponent extends Component {
 
     closeChipModal = () => {
       this.setState({ showModal: false, selectedChip: null });
+    };
+
+    openProjectModal = (project) => {
+      this.setState({ showProjectModal: true, selectedProject: project });
+    };
+
+    closeProjectModal = () => {
+      this.setState({ showProjectModal: false, selectedProject: null });
     };
 
     async componentDidMount() {}
@@ -161,7 +171,7 @@ class TimelineComponent extends Component {
 
     render() {
         return (
-            <div className="timeline">
+          <div className="timeline">
           <p className="headline">Licenses & certifications</p>
           <div className="timeline-entry">
               <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
@@ -186,40 +196,38 @@ class TimelineComponent extends Component {
                 <span className="chip-modal-close" onClick={this.closeChipModal}>&times;</span>
                 <h3>{this.state.selectedChip}</h3>
                 <p>Learn Programming: <b>{this.state.selectedChip} Programming | </b>
-              <a href="#" onClick={e => { e.preventDefault(); alert('Learn Programming Certificate clicked!'); }}> Certification</a>
+              <a href="https://res.cloudinary.com/dbfn5lnvx/image/authenticated/s--pjMtge_B--/v1749845496/certificates/programming/dominicwokoracho-6247.pdf" onClick={e => { e.preventDefault(); alert('Learn Programming Certificate clicked!'); }}> Certification</a>
                 </p>
                 <p>Learn Javascript Online: <b>{this.state.selectedChip} Javascript | </b>
-              <a href="#" onClick={e => { e.preventDefault(); alert('Learn Javascript Certificate clicked!'); }}> Certification</a>
+              <a href="https://res.cloudinary.com/dbfn5lnvx/image/authenticated/s--jQf4kLYM--/v1754514816/certificates/javascript/dominicwokoracho-4602.pdf" onClick={e => { e.preventDefault(); alert('Learn Javascript Certificate clicked!'); }}> Certification</a>
                 </p>
                 <p>Learn TypeScript: <b>{this.state.selectedChip} TypeScript | </b>
-              <a href="#" onClick={e => { e.preventDefault(); alert('Learn TypeScript Certificate clicked!'); }}> Certificate</a>
+              <a href="https://res.cloudinary.com/dbfn5lnvx/image/authenticated/s--DWQeWw6m--/v1757001209/certificates/typescript/dominicwokoracho-3076.pdf" onClick={e => { e.preventDefault(); alert('Learn TypeScript Certificate clicked!'); }}> Certificate</a>
                 </p>
                 <p>Codecademy: <b>{this.state.selectedChip} React Course | </b>
-              <a href="#" onClick={e => { e.preventDefault(); alert('React Course Certificate clicked!'); }}> Certificate</a>
+              <a href="https://www.codecademy.com/profiles/Do3in13/certificates/af00e5032d0a68cc84879983f5d8333b" onClick={e => { e.preventDefault(); alert('React Course Certificate clicked!'); }}> Certificate</a>
                 </p>
                 <p>Codecademy: <b>{this.state.selectedChip} Express Course | </b>
-              <a href="#" onClick={e => { e.preventDefault(); alert('Express Course Certificate clicked!'); }}> Certificate</a>
+              <a href="https://www.codecademy.com/profiles/Do3in13/certificates/85396dd6e2e850ab34e904243aa464c6" onClick={e => { e.preventDefault(); alert('Express Course Certificate clicked!'); }}> Certificate</a>
                 </p>
                 <p>Codecademy: <b>{this.state.selectedChip} Python 3 Course | </b>
-              <a href="#" onClick={e => { e.preventDefault(); alert('Python 3 Course Certificate clicked!'); }}> Certificate</a>
+              <a href="https://www.codecademy.com/profiles/Do3in13/certificates/6c152bd262967f8c941c9707ed636bda" onClick={e => { e.preventDefault(); alert('Python 3 Course Certificate clicked!'); }}> Certificate</a>
                 </p>
                 <p>Codecademy: <b>{this.state.selectedChip} Implement Search Algorithm with Python | </b>
-              <a href="#" onClick={e => { e.preventDefault(); alert('Search Algorithm Certificate clicked!'); }}> Certificate</a>
+              <a href="https://www.codecademy.com/profiles/Do3in13/certificates/7ef6f23b56de87623eb4e74e2fca3923" onClick={e => { e.preventDefault(); alert('Search Algorithm Certificate clicked!'); }}> Certificate</a>
                 </p>
                 <p>HackerRank: <b>{this.state.selectedChip} Javascript (Intermediate) | </b>
-              <a href="#" onClick={e => { e.preventDefault(); alert('Javascript (Intermediate) Certificate clicked!'); }}> Certificate</a>
+              <a href="https://www.hackerrank.com/certificates/801266a0644e" onClick={e => { e.preventDefault(); alert('Javascript (Intermediate) Certificate clicked!'); }}> Certificate</a>
                 </p>
                 <p>HackerRank: <b>{this.state.selectedChip} Rest API (Intermediate) | </b>
-              <a href="#" onClick={e => { e.preventDefault(); alert('Rest API (Intermediate) Certificate clicked!'); }}> Certificate</a>
+              <a href="https://www.hackerrank.com/certificates/8519f3ff1603" onClick={e => { e.preventDefault(); alert('Rest API (Intermediate) Certificate clicked!'); }}> Certificate</a>
                 </p>
                 <p>HackerRank: <b>{this.state.selectedChip} Problem Solving (Basic) | </b>
-              <a href="#" onClick={e => { e.preventDefault(); alert('Problem Solving (Basic) Certificate clicked!'); }}> Certificate</a>
+              <a href="https://www.hackerrank.com/certificates/b1ada8f40027" onClick={e => { e.preventDefault(); alert('Problem Solving (Basic) Certificate clicked!'); }}> Certificate</a>
                 </p>
             </div>
               </div>
           )}
-
-          {/* ...existing code... */}
 
           <p className="headline">Shadowing Sessions</p>
           <div className="timeline-entry">
@@ -246,7 +254,8 @@ class TimelineComponent extends Component {
                 </p>
                 <div className="timeline-entries">
               <div className="timeline-entry-chip">
-                  <Chip>Python (Basic) | Javascript | API | Unit Test | Git/Github</Chip>
+                  <Chip>Python | Javascript | API | Unit Test | Git </Chip>
+                  <Chip>Pipeline | Docker | Jenkins</Chip>
               </div>
                 </div>
             </CardText>
@@ -261,17 +270,18 @@ class TimelineComponent extends Component {
             <CardText expandable={true}>
                 <Avatar src="project.png" size={150} style={{ objectFit: 'cover', marginLeft: '100px' }} />
 
-                <div className="timeline-entries">
-              <div className="timeline-entry-chip-blogs">
+              <div className="timeline-entries">
+                <div className="timeline-entry-chip-blogs">
                   <ul>
-                          <li><a href="https://google.co.uk">Steaming API</a></li>
-                          <li><a href="https://google.co.uk">Opening Account</a></li>
-                          <li><a href="https://google.co.uk">Travel World Web Developer</a></li>
+                    <li><a href="https://videos-hooks-amber-theta.vercel.app/">Steaming API</a></li>
+                    <li><a href="https://dw-weather-api-git-master-domwokorach.vercel.app/">Weather API</a></li>
+                    <li><a href="https://my-project-opening-account.vercel.app/">My Project- Opening Account</a></li>
+                    <li><a href="https://dw-travel-world.vercel.app/">My Project Travel World</a></li>
                   </ul>
-              </div>
                 </div>
+              </div>
             </CardText>
-              </Card>
+            </Card>
           </div>
 
           <p className="headline">Working experience</p>
