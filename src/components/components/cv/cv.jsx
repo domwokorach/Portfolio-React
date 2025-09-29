@@ -22,7 +22,7 @@ class CodeGithubComponent extends Component {
         <FlatButton
           className="flatbutton"
           label="Download CV"
-          href="/CV D Wokorach-O.pdf"
+          href="/CV DW 2025.pdf"
           target="_blank"
           download
         />
