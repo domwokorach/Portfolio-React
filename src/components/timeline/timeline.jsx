@@ -196,34 +196,34 @@ class TimelineComponent extends Component {
                 <span className="chip-modal-close" onClick={this.closeChipModal}>&times;</span>
                 <h3>{this.state.selectedChip}</h3>
                 <p>Learn Programming: <b>{this.state.selectedChip} Programming | </b>
-              <a href="https://res.cloudinary.com/dbfn5lnvx/image/authenticated/s--pjMtge_B--/v1749845496/certificates/programming/dominicwokoracho-6247.pdf" onClick={e => { e.preventDefault(); alert('Learn Programming Certificate clicked!'); }}> Certification</a>
+              <a href="https://res.cloudinary.com/dbfn5lnvx/image/authenticated/s--pjMtge_B--/v1749845496/certificates/programming/dominicwokoracho-6247.pdf"> Certification</a>
                 </p>
                 <p>Learn Javascript Online: <b>{this.state.selectedChip} Javascript | </b>
-              <a href="https://res.cloudinary.com/dbfn5lnvx/image/authenticated/s--jQf4kLYM--/v1754514816/certificates/javascript/dominicwokoracho-4602.pdf" onClick={e => { e.preventDefault(); alert('Learn Javascript Certificate clicked!'); }}> Certification</a>
+              <a href="https://res.cloudinary.com/dbfn5lnvx/image/authenticated/s--jQf4kLYM--/v1754514816/certificates/javascript/dominicwokoracho-4602.pdf"> Certification</a>
                 </p>
                 <p>Learn TypeScript: <b>{this.state.selectedChip} TypeScript | </b>
-              <a href="https://res.cloudinary.com/dbfn5lnvx/image/authenticated/s--DWQeWw6m--/v1757001209/certificates/typescript/dominicwokoracho-3076.pdf" onClick={e => { e.preventDefault(); alert('Learn TypeScript Certificate clicked!'); }}> Certificate</a>
+              <a href="https://res.cloudinary.com/dbfn5lnvx/image/authenticated/s--DWQeWw6m--/v1757001209/certificates/typescript/dominicwokoracho-3076.pdf"> Certificate</a>
                 </p>
                 <p>Codecademy: <b>{this.state.selectedChip} React Course | </b>
-              <a href="https://www.codecademy.com/profiles/Do3in13/certificates/af00e5032d0a68cc84879983f5d8333b" onClick={e => { e.preventDefault(); alert('React Course Certificate clicked!'); }}> Certificate</a>
+              <a href="https://www.codecademy.com/profiles/Do3in13/certificates/af00e5032d0a68cc84879983f5d8333b"> Certificate</a>
                 </p>
                 <p>Codecademy: <b>{this.state.selectedChip} Express Course | </b>
-              <a href="https://www.codecademy.com/profiles/Do3in13/certificates/85396dd6e2e850ab34e904243aa464c6" onClick={e => { e.preventDefault(); alert('Express Course Certificate clicked!'); }}> Certificate</a>
+              <a href="https://www.codecademy.com/profiles/Do3in13/certificates/85396dd6e2e850ab34e904243aa464c6"> Certificate</a>
                 </p>
                 <p>Codecademy: <b>{this.state.selectedChip} Python 3 Course | </b>
-              <a href="https://www.codecademy.com/profiles/Do3in13/certificates/6c152bd262967f8c941c9707ed636bda" onClick={e => { e.preventDefault(); alert('Python 3 Course Certificate clicked!'); }}> Certificate</a>
+              <a href="https://www.codecademy.com/profiles/Do3in13/certificates/6c152bd262967f8c941c9707ed636bda"> Certificate</a>
                 </p>
                 <p>Codecademy: <b>{this.state.selectedChip} Implement Search Algorithm with Python | </b>
-              <a href="https://www.codecademy.com/profiles/Do3in13/certificates/7ef6f23b56de87623eb4e74e2fca3923" onClick={e => { e.preventDefault(); alert('Search Algorithm Certificate clicked!'); }}> Certificate</a>
+              <a href="https://www.codecademy.com/profiles/Do3in13/certificates/7ef6f23b56de87623eb4e74e2fca3923"> Certificate</a>
                 </p>
                 <p>HackerRank: <b>{this.state.selectedChip} Javascript (Intermediate) | </b>
-              <a href="https://www.hackerrank.com/certificates/801266a0644e" onClick={e => { e.preventDefault(); alert('Javascript (Intermediate) Certificate clicked!'); }}> Certificate</a>
+              <a href="https://www.hackerrank.com/certificates/801266a0644e"> Certificate</a>
                 </p>
                 <p>HackerRank: <b>{this.state.selectedChip} Rest API (Intermediate) | </b>
-              <a href="https://www.hackerrank.com/certificates/8519f3ff1603" onClick={e => { e.preventDefault(); alert('Rest API (Intermediate) Certificate clicked!'); }}> Certificate</a>
+              <a href="https://www.hackerrank.com/certificates/8519f3ff1603"> Certificate</a>
                 </p>
                 <p>HackerRank: <b>{this.state.selectedChip} Problem Solving (Basic) | </b>
-              <a href="https://www.hackerrank.com/certificates/b1ada8f40027" onClick={e => { e.preventDefault(); alert('Problem Solving (Basic) Certificate clicked!'); }}> Certificate</a>
+              <a href="https://www.hackerrank.com/certificates/b1ada8f40027"> Certificate</a>
                 </p>
             </div>
               </div>
