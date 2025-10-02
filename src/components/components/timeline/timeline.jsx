@@ -6,17 +6,44 @@ import {
 } from 'material-ui/Card';
 import Chip from 'material-ui/Chip';
 import './timeline.css';
+import { Avatar } from 'material-ui';
 
 class TimelineComponent extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
           expanded1: false,
           expanded2: false,
-          expanded3: false
+          expanded3: false,
+          expanded4: false,
+          expanded5: false,
+          expanded6: false,
+          expanded7: false,
+          expanded8: false,
+          expanded9: false,
+          expanded10: false,
+          showModal: false,
+          selectedChip: null,
+          showProjectModal: false,
+          selectedProject: null
         };
     }
+
+    openChipModal = (chipLabel) => {
+      this.setState({ showModal: true, selectedChip: chipLabel });
+    };
+
+    closeChipModal = () => {
+      this.setState({ showModal: false, selectedChip: null });
+    };
+
+    openProjectModal = (project) => {
+      this.setState({ showProjectModal: true, selectedProject: project });
+    };
+
+    closeProjectModal = () => {
+      this.setState({ showProjectModal: false, selectedProject: null });
+    };
 
     async componentDidMount() {}
 
@@ -34,6 +61,34 @@ class TimelineComponent extends Component {
       this.setState({expanded3: expanded3});
     };
 
+    handleExpandChange4 = (expanded4) => {
+      this.setState({expanded4: expanded4});
+    };
+
+    handleExpandChange5 = (expanded5) => {
+      this.setState({expanded5: expanded5});
+    };
+
+    handleExpandChange6 = (expanded6) => {
+      this.setState({expanded6: expanded6});
+    };
+
+    handleExpandChange7 = (expanded7) => {
+      this.setState({expanded7: expanded7});
+    };
+
+    handleExpandChange8 = (expanded8) => {
+      this.setState({expanded8: expanded8});
+    };
+
+    handleExpandChange9 = (expanded9) => {
+      this.setState({expanded9: expanded9});
+    };
+
+    handleExpandChange10 = (expanded10) => {
+      this.setState({expanded10: expanded10});
+    };
+
     handleExpand = () => {
       this.setState({expanded: true});
     };
@@ -44,6 +99,34 @@ class TimelineComponent extends Component {
 
     handleExpand3 = () => {
       this.setState({expanded3: true});
+    };
+
+    handleExpand4 = () => {
+      this.setState({expanded4: true});
+    };
+
+    handleExpand5 = () => {
+      this.setState({expanded5: true});
+    };
+
+    handleExpand6 = () => {
+      this.setState({expanded6: true});
+    };
+
+    handleExpand7 = () => {
+      this.setState({expanded7: true});
+    };
+
+    handleExpand8 = () => {
+      this.setState({expanded8: true});
+    };
+
+    handleExpand9 = () => {
+      this.setState({expanded9: true});
+    };
+
+    handleExpand10 = () => {
+      this.setState({expanded10: true});
     };
 
     handleReduce = () => {
@@ -57,97 +140,344 @@ class TimelineComponent extends Component {
     handleReduce3 = () => {
       this.setState({expanded3: false});
     };
+
+    handleReduce4 = () => {
+      this.setState({expanded4: false});
+    };
+
+    handleReduce5 = () => {
+      this.setState({expanded5: false});
+    };
+
+    handleReduce6 = () => {
+      this.setState({expanded6: false});
+    };
+
+    handleReduce7 = () => {
+      this.setState({expanded7: false});
+    };
+
+    handleReduce8 = () => {
+      this.setState({expanded8: false});
+    };
+
+    handleReduce9 = () => {
+      this.setState({expanded9: false});
+    };
+
+    handleReduce10 = () => {
+      this.setState({expanded10: false});
+    };
+
     render() {
         return (
-            <div className="timeline">
-              <p className="headline">Working experience</p>
-                  <div className="timeline-entry">
-                    <Card expanded={this.state.expanded1} onExpandChange={this.handleExpandChange}>
-                        <CardHeader title="Software Developer" subtitle="Testo	SE	&	Co.	KGaA"
-                          actAsExpander={true} showExpandableButton={true}/>
-                        <CardText expandable={true}>
-                            since	October	2016. Development of Microservices, UX-Consulting.
-                            <br/><br/>
-                              <div className="timeline-entries">
-                                <div className="timeline-entry-chip">
-                                  <Chip>Angular 2</Chip>
-                                </div>
-                                <div className="timeline-entry-chip">
-                                  <Chip>Docker</Chip>
-                                </div>
-                                <div className="timeline-entry-chip">
-                                  <Chip>Jenkins</Chip>
-                                </div>
-                                <div className="timeline-entry-chip">
-                                  <Chip>LESS</Chip>
-                                </div>
-                                <div className="timeline-entry-chip">
-                                  <Chip>Java Spring</Chip>
-                                </div>
-                                <div className="timeline-entry-chip">
-                                  <Chip>Foundation, Bootstrap</Chip>
-                                </div>
-                                <div className="timeline-entry-chip">
-                                  <Chip>Confluence, JIRA</Chip>
-                                </div>
-                              </div>
-                        </CardText>
-                    </Card>
-                  </div>
-                  <div className="timeline-entry">
-                  <Card expanded={this.state.expanded2} onExpandChange={this.handleExpandChange2}>
-                      <CardHeader title="Student" subtitle="Testo	SE	&	Co.	KGaA"
-                        actAsExpander={true} showExpandableButton={true}/>
-                      <CardText expandable={true}>
-                          October 2013 - September 2016. Bachelor of Science (Business Engineering), process automation and management, web and software development. Thesis: Integration of CRM and marketing automation with Hybris E-Commerce.
-
-                          <div className="timeline-entries">
-                            <div className="timeline-entry-chip">
-                              <Chip>BPMN</Chip>
-                            </div>
-                            <div className="timeline-entry-chip">
-                              <Chip>SharePoint</Chip>
-                            </div>
-                            <div className="timeline-entry-chip">
-                              <Chip>Nintex</Chip>
-                            </div>
-                            <div className="timeline-entry-chip">
-                              <Chip>Marketo</Chip>
-                            </div>
-                            <div className="timeline-entry-chip">
-                              <Chip>Microsoft Dynamics</Chip>
-                            </div>
-                            <div className="timeline-entry-chip">
-                              <Chip>Hybris</Chip>
-                            </div>
-                            <div className="timeline-entry-chip">
-                              <Chip>First Spirit</Chip>
-                            </div>
-                          </div>
-                      </CardText>
-                  </Card>
+          <div className="timeline">
+          <p className="headline">Licenses & certifications</p>
+          <div className="timeline-entry">
+              <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
+            <CardHeader title="Certifications" subtitle="Codecademy, HackerRank and other - 2025"
+                actAsExpander={true} showExpandableButton={true}/>
+            <CardText expandable={true}>
+                <div className='double-img'>
+              <Avatar src="certificate.png" size={100} style={{ objectFit: 'cover' }} />
                 </div>
-                <div className="timeline-entry">
-                  <Card expanded={this.state.expanded3} onExpandChange={this.handleExpandChange3}>
-                      <CardHeader title="Trainee" subtitle="Testo	Instruments	(Shenzhen)	Co.	Ltd"
-                        actAsExpander={true} showExpandableButton={true}/>
-                      <CardText expandable={true}>
-                          January	2015	-	March	2015. Installation of a quality management system according to ISO 9001 for the subsidiary in Shenzhen.
-
-                          <div className="timeline-entries">
-                            <div className="timeline-entry-chip">
-                              <Chip>Confluence</Chip>
-                            </div>
-                            <div className="timeline-entry-chip">
-                              <Chip>ISO 9001</Chip>
-                            </div>
-                            <div className="timeline-entry-chip">
-                              <Chip>BPMN</Chip>
-                            </div>
-                          </div>
-                      </CardText>
-                  </Card>
+                <div className="timeline-entries">
+              <div className="timeline-entry-chip">
+                  <Chip onClick={() => this.openChipModal('')}>Click info</Chip>
+              </div>
                 </div>
+            </CardText>
+              </Card>
+          </div>
+
+          {this.state.showModal && (
+              <div className="chip-modal-overlay" onClick={this.closeChipModal}>
+            <div className="chip-modal-content animate-chip-modal" onClick={e => e.stopPropagation()}>
+                <span className="chip-modal-close" onClick={this.closeChipModal}>&times;</span>
+                <h3>{this.state.selectedChip}</h3>
+                <p>Learn Programming: <b>{this.state.selectedChip} Programming | </b>
+              <a href="https://res.cloudinary.com/dbfn5lnvx/image/authenticated/s--pjMtge_B--/v1749845496/certificates/programming/dominicwokoracho-6247.pdf"> Certification</a>
+                </p>
+                <p>Learn Javascript Online: <b>{this.state.selectedChip} Javascript | </b>
+              <a href="https://res.cloudinary.com/dbfn5lnvx/image/authenticated/s--jQf4kLYM--/v1754514816/certificates/javascript/dominicwokoracho-4602.pdf"> Certification</a>
+                </p>
+                <p>Learn TypeScript: <b>{this.state.selectedChip} TypeScript | </b>
+              <a href="https://res.cloudinary.com/dbfn5lnvx/image/authenticated/s--DWQeWw6m--/v1757001209/certificates/typescript/dominicwokoracho-3076.pdf"> Certificate</a>
+                </p>
+                <p>Codecademy: <b>{this.state.selectedChip} React Course | </b>
+              <a href="https://www.codecademy.com/profiles/Do3in13/certificates/af00e5032d0a68cc84879983f5d8333b"> Certificate</a>
+                </p>
+                <p>Codecademy: <b>{this.state.selectedChip} Express Course | </b>
+              <a href="https://www.codecademy.com/profiles/Do3in13/certificates/85396dd6e2e850ab34e904243aa464c6"> Certificate</a>
+                </p>
+                <p>Codecademy: <b>{this.state.selectedChip} Python 3 Course | </b>
+              <a href="https://www.codecademy.com/profiles/Do3in13/certificates/6c152bd262967f8c941c9707ed636bda"> Certificate</a>
+                </p>
+                <p>Codecademy: <b>{this.state.selectedChip} Implement Search Algorithm with Python | </b>
+              <a href="https://www.codecademy.com/profiles/Do3in13/certificates/7ef6f23b56de87623eb4e74e2fca3923"> Certificate</a>
+                </p>
+                <p>HackerRank: <b>{this.state.selectedChip} Javascript (Intermediate) | </b>
+              <a href="https://www.hackerrank.com/certificates/801266a0644e"> Certificate</a>
+                </p>
+                <p>HackerRank: <b>{this.state.selectedChip} Rest API (Intermediate) | </b>
+              <a href="https://www.hackerrank.com/certificates/8519f3ff1603"> Certificate</a>
+                </p>
+                <p>HackerRank: <b>{this.state.selectedChip} Problem Solving (Basic) | </b>
+              <a href="https://www.hackerrank.com/certificates/b1ada8f40027"> Certificate</a>
+                </p>
+            </div>
+              </div>
+          )}
+
+          <p className="headline">Shadowing Sessions</p>
+          <div className="timeline-entry">
+              <Card expanded={this.state.expanded2} onExpandChange={this.handleExpandChange2}>
+            <CardHeader title="Software Engineering" subtitle="Sky | Shadowing Session - 2024"
+                actAsExpander={true} showExpandableButton={true}/>
+            <CardText expandable={true}>
+                <Avatar src="sky_group_logo.png" size={150} style={{ objectFit: 'cover', marginLeft: '100px' }} />
+                <h4>Shadowing Sessions</h4>
+                <p>Roles & Responsibilities:<br />
+              Backend | Evaluate | Get Available Catalogue (GAC).
+                </p>
+                <p>CATS (Catalogue Service):<br />
+              Analysis | Design | Development | Testing | Deployment | Deployment & Maintenance & Design.
+                </p>
+                <p>Day to Day Tasks:<br />
+              Unit Testing & Features Testing | Bug is reported | Code Review | Scrum rituals.
+                </p>
+                <p>Scrum Rituals:<br />
+              Stand up | Sprint Demos | Retrospective (Retros) | Refinement.
+                </p>
+                <p>Developing Code:<br />
+              CATS | Understand what the code is doing, identify the problem | Testing (Unit Tests) | Feature Test (Does the API work?).
+                </p>
+                <div className="timeline-entries">
+              <div className="timeline-entry-chip">
+                  <Chip>Python | Javascript | API | Unit Test | Git </Chip>
+                  <Chip>Pipeline | Docker | Jenkins</Chip>
+              </div>
+                </div>
+            </CardText>
+              </Card>
+          </div>
+
+          <p className="headline">Projects</p>
+          <div className="timeline-entry">
+              <Card expanded={this.state.expanded3} onExpandChange={this.handleExpandChange3}>
+            <CardHeader title="Project" subtitle="Blogs | 2024"
+                actAsExpander={true} showExpandableButton={true}/>
+            <CardText expandable={true}>
+                <Avatar src="project.png" size={150} style={{ objectFit: 'cover', marginLeft: '100px' }} />
+
+              <div className="timeline-entries">
+                <div className="timeline-entry-chip-blogs">
+                  <ul>
+                    <li><a href="https://videos-hooks-amber-theta.vercel.app/">Steaming API</a></li>
+                    <li><a href="https://dw-weather-api-git-master-domwokorach.vercel.app/">Weather API</a></li>
+                    <li><a href="https://my-project-opening-account.vercel.app/">My Project- Opening Account</a></li>
+                    <li><a href="https://dw-travel-world.vercel.app/">My Project Travel World</a></li>
+                  </ul>
+                </div>
+              </div>
+            </CardText>
+            </Card>
+          </div>
+
+          <p className="headline">Working experience</p>
+
+          <div className="timeline-entry">
+              <Card expanded={this.state.expanded4} onExpandChange={this.handleExpandChange4}>
+            <CardHeader title="Front End Developer" subtitle="Lloyds Banking Group | 2018 - 2020"
+                actAsExpander={true} showExpandableButton={true}/>
+            <CardText expandable={true}>
+                <h4>Specialist | Web Accessibility on Banking online.</h4>
+                <p>By creating JavaScript together with my team, I played a key role within the special Signly partnership at Lloyds, which won the financial Innovation Awards 2017. Signly is a BSL British Sign Language accessibility service that allows deaf customers to see a video pop up with a sign language video.</p>                          
+                <h4>Front End Developer | Applied Technology, Innovation & Strategy</h4>
+                <p>HTML5, CSS3, React, Node.js, Express, Webpack and Javascript - Front End Development</p>
+                <p>A part of the team the delivery the successful Innovation Communities conference 2018.</p>
+                <p>Actively engaged with other colleagues to help determine values and set KPIs.</p>
+                <p>Took part in showcasing prototypes for Applied Technology Innovation and Strategy team.</p>
+                <div className="timeline-entries">
+              <div className="timeline-entry-chip">
+                  <Chip>React</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>Nodes</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>Express</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>Webpack</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>Javascript</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>Git</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>Confluence, JIRA</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>Web Accessibility</Chip>
+              </div>
+                </div>
+            </CardText>
+              </Card>
+          </div>
+
+          <div className="timeline-entry">
+              <Card expanded={this.state.expanded5} onExpandChange={this.handleExpandChange5}>
+            <CardHeader title="Web Developer" subtitle="Lloyds Banking Group | 2016 - 2018"
+                actAsExpander={true} showExpandableButton={true}/>
+            <CardText expandable={true}>
+                <h4>Web Developer and Backend (Basic) | Architecture, Methodogy & Innovation, Applied Technology</h4>
+                <p>Python learn the basic - backend functions Data Analyst, Data Science and Machine Learning.</p>
+                <p>Joined the Innovation X team supporting to developer Neo4j Graph Database/ used Cascading Style Sheets (CSS) and added icons to the tool bar/navigation bar so make searing for people in the team easier.</p>
+                <p>Libraries the programmes languages and functionality. I constantly try to push myself and enjoy learning all the time. My aim is to become a Front End Developer/Software Engineer.</p>
+                <div className="double-img">
+              <Avatar src="lyd_2016.jpg" size={150} />
+              <Avatar src="lyd-1_2016.png" size={150} />
+                </div>
+                <div className="timeline-entries">
+              <div className="timeline-entry-chip">
+                  <Chip>Data Analyst / Data Scientists (Basic)</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>Machine Learning (Basic)</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>Neo4j - Graph</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>CSS3/CSS</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>Python (Basic)</Chip>
+              </div>
+                </div>
+            </CardText>
+              </Card>
+          </div>
+
+          <div className="timeline-entry">
+              <Card expanded={this.state.expanded6} onExpandChange={this.handleExpandChange6}>
+            <CardHeader title="Software Engineer" subtitle="Lloyds Banking Group | 2015 - 2016"
+                actAsExpander={true} showExpandableButton={true}/>
+            <CardText expandable={true}>
+                <Avatar src="lloyds-banking-group-logo.png" size={150} style={{ objectFit: 'cover', marginLeft: '100px' }} />
+                <h4>Software Engineer | UI Delivery & Transformation</h4>
+                <p>UI Delivery, our team has the responsibility to review error codes/update before business release on Lloyds Banking online in the real time across the UK.</p>
+                <p>I have strong knowledge in HTML/CSS and JavaScript & Git programmers language through pattern library Desktop/Mobile an error fixing bug issues - Web Accessibility</p>
+                <div className="timeline-entries">
+              <div className="timeline-entry-chip">
+                  <Chip>HTML</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>CSS/Less</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>Javascript</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>GIT</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>TTD</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>Jenkins</Chip>
+              </div>
+                </div>
+            </CardText>
+              </Card>
+          </div>
+
+          <div className="timeline-entry">
+              <Card expanded={this.state.expanded7} onExpandChange={this.handleExpandChange7}>
+            <CardHeader title="IT Apprentice" subtitle="Lloyds Banking Group | 2014 - 2015"
+                actAsExpander={true} showExpandableButton={true}/>
+            <CardText expandable={true}>
+                <h4>Information of Technology</h4>
+                <p>Information of Technology | I joined Lloyds Banking Group as an Apprentice where I shadowed four teams and trained to become a Software Engineer.</p>
+
+                <div className="timeline-entries">
+              <div className="timeline-entry-chip">
+                  <Chip>Mobile</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>HR</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>DevOps</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>UI Delivery & Transformation</Chip>
+              </div>
+                </div>
+            </CardText>
+              </Card>
+          </div>
+
+          <div className="timeline-entry">
+              <Card expanded={this.state.expanded8} onExpandChange={this.handleExpandChange8}>
+            <CardHeader title="In Support" subtitle="Leonard Cheshire Disability | 2014"
+                actAsExpander={true} showExpandableButton={true}/>
+            <CardText expandable={true}>
+                <Avatar src="Leonard-Cheshire-Disability-logo.jpg" size={150} style={{ objectFit: 'cover', marginLeft: '100px' }} />
+                <p>In support of Leonard Cheshire Disability and the global contribution of disabled people to enterprise, Samantha Cameron requests the pleasure of the company of Dominic attended to 10th Downing Street London <em>(20th May 2014)</em>.</p>
+                <p>a new employment programmes for disabled people based in London.</p>
+                <p>"We are delighted to announce the launch of ChangeWorks. Delivered by Leonard Cheshire Disability, this programmes will support disabled adults who are for paid employment."</p>
+                <div className="double-img">
+              <Avatar src="lcd_5.jpg" size={70} />
+              <Avatar src="lcd_2.jpg" size={70} />
+              <Avatar src="lcd_3.jpg" size={70} />
+              <Avatar src="lcd_4.jpg" size={70} />
+                </div>
+            </CardText>
+              </Card>
+          </div>
+
+          <div className="timeline-entry">
+              <Card expanded={this.state.expanded9} onExpandChange={this.handleExpandChange9}>
+            <CardHeader title="Web Designer " subtitle="Lion Web Vision | 2013"
+                actAsExpander={true} showExpandableButton={true}/>
+            <CardText expandable={true}>
+                Training Work Experience (4 Weeks)
+                <div className="timeline-entries">
+              <div className="timeline-entry-chip">
+                  <Chip>HTML</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>CSS</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>Wordpress</Chip>
+              </div>
+              <div className="timeline-entry-chip">
+                  <Chip>Photoshop CS3</Chip>
+              </div>
+                </div>
+            </CardText>
+              </Card>
+          </div>
+
+          <p className="headline">Education</p>
+
+          <div className="timeline-entry">
+              <Card expanded={this.state.expanded10} onExpandChange={this.handleExpandChange10}>
+            <CardHeader title="Hammersmith & West London College" subtitle="2005 - 2009"
+                actAsExpander={true} showExpandableButton={true}/>
+            <CardText expandable={true}>
+                <p>BTEC National Diploma for - IT Practitioners (IT & Business)</p>
+                <p>BTEC First Diploma in ICT Practitioners</p>
+                <p>GNVQ Foundation Business</p>
+                <p>ICT Practitioners</p>
+            </CardText>
+              </Card>
+          </div>
             </div>
         );
     }
